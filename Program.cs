@@ -6,16 +6,26 @@ namespace Kolman_TM5_TimeLoop
     {
         static void Main(string[] args)
         {
-            int length = int.Parse(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
 
-            //Count Starting From 1
-            int OrderCounter = 1;
-            while (length >= OrderCounter)
+            if (x >= 0 && x <= 100)
             {
-                Console.WriteLine(OrderCounter.ToString() + " " + "Abracadabra");
-                OrderCounter++;
+                for (int i = 1; i <= x; i++)
+                {
+                    Console.WriteLine(i + " " + "Abracadabra");
+                }
+
             }
-        }
+            else
+            {
+                Console.WriteLine("Please Choose A Number between 1 and 100");
+            }
+
+            
+
+            
+         }
     }
 }
+
 
